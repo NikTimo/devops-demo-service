@@ -14,6 +14,7 @@
 1. Для запуска сервиса необходимо создать в корневой папке проекта файл .env с переменными окржуения. Ниже представлен пример содержимого файла.
 ```
 # Database Variables
+# Database Variables
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=postgres
 POSTGRES_DB=postgres
@@ -24,6 +25,11 @@ DB_PORT=5432
 DJANGO_SUPERUSER_USERNAME=admin
 DJANGO_SUPERUSER_EMAIL=admin@admin.ru
 DJANGO_SUPERUSER_PASSWORD=123
+
+# Django Variables
+DB_NAME=postgres
+DB_USER=postgres
+DB_PASSWORD=postgres
 ```
 2. Запуск compose `docker compose up --build`
 
