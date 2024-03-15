@@ -41,13 +41,13 @@ DB_NAME=postgres
 DB_USER=postgres
 DB_PASSWORD=postgres
 ```
-2. Запуск compose `docker compose up --build`
+3. Запуск compose `docker compose up --build`
 
-3. После запуска панель администратора достпуна по адресу [http://localhost:9999/admin/](http://localhost:9999/admin/)
+4. После запуска панель администратора достпуна по адресу [http://localhost:9999/admin/](http://localhost:9999/admin/)
 
-4. Для проверки работоспособности CI процесса необходимо выполнить форк текущего репозитория, добавть в GitHub Secrets секреты `DOCKER_USERNAME` и `DOCKER_PASSWORD` с учетными данными DockerHub и выполнить любой коммит в в ветку main.
+5. Для проверки работоспособности CI процесса необходимо выполнить форк текущего репозитория, добавть в GitHub Secrets секреты `DOCKER_USERNAME` и `DOCKER_PASSWORD` с учетными данными DockerHub и выполнить любой коммит в в ветку main.
 
-5. Для проверки работосособности собранного мной образа создан файл docker-compose-dockerhub.yml, запускающий compose из образа с моего DcokerHub. Для запуска используется команда:
+6. Для проверки работосособности собранного мной образа создан файл docker-compose-dockerhub.yml, запускающий compose из образа с моего DcokerHub. Для запуска используется команда:
 </br>`docker compose -f docker-compose-dockerhub.yml up`
 
 
