@@ -43,4 +43,4 @@ class UsersTestCase(TestCase):
     def test_get_users_list_as_unauth_user(self):
         self.client.logout()
         response = self.client.get("/users/")
-        self.assertEqual(response.status_code, 403)
+        self.assertEqual(response.status_code, 404)
