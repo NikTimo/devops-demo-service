@@ -21,8 +21,7 @@ COPY poetry.lock pyproject.toml /code/
 RUN poetry export --without-hashes -f requirements.txt --output ./requirements.txt
 
 # Install dependencies to local folder
-RUN pip install --target=$PKGS_DIR -r ./requirements.txt
-RUN pip install --target=$PKGS_DIR gunicorn
+RUN pip install --target=$PKGS_DIR -r ./requirements.txt gunicorn
 
 # Main image with service
 FROM base
